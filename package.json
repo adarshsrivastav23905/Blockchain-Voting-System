@@ -1,0 +1,32 @@
+{
+  "name": "blockchain-voting-system",
+  "version": "1.0.0",
+  "description": "A secure blockchain-based voting system using Ethereum and smart contracts",
+  "private": true,
+  "scripts": {
+    "frontend:install": "cd frontend && npm install",
+    "backend:install": "cd backend && npm install",
+    "contracts:install": "npm install",
+    "frontend:dev": "cd frontend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "contracts:compile": "npx hardhat compile",
+    "contracts:test": "npx hardhat test",
+    "contracts:deploy": "npx hardhat run scripts/deploy.ts --network localhost",
+    "contracts:node": "npx hardhat node",
+    "install:all": "npm install && npm run frontend:install && npm run backend:install"
+  },
+  "dependencies": {
+    "hardhat": "^2.17.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "ethers": "^6.7.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "typechain": "^8.3.2",
+    "solidity-coverage": "^0.8.4"
+  }
+}

@@ -1,0 +1,15 @@
+export const VOTING_ABI = [
+  "function addCandidate(string name, string description, address candidateAddress)",
+  "function registerVoter(address voter)",
+  "function registerMultipleVoters(address[] voters)",
+  "function isRegisteredVoter(address voter) view returns (bool)",
+  "function startVoting(uint256 durationInMinutes)",
+  "function endVoting()",
+  "function castVote(uint256 candidateId)",
+  "function getCandidates() view returns (tuple(uint256 id, string name, string description, uint256 voteCount, address candidateAddress)[])",
+  "function getCandidate(uint256 candidateId) view returns (tuple(uint256 id, string name, string description, uint256 voteCount, address candidateAddress))",
+  "function getCandidateCount() view returns (uint256)",
+  "function getVotingStatus() view returns (bool)",
+  "function getTotalVotes() view returns (uint256)",
+  "function getWinner() view returns (uint256[])",
+];

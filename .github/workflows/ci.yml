@@ -1,0 +1,51 @@
+name: Tests and Deployment
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install dependencies
+      run: npm run install:all
+    
+    - name: Compile smart contracts
+      run: npm run contracts:compile
+    
+    - name: Run contract tests
+      run: npm run contracts:test
+    
+    - name: Build frontend
+      run: cd frontend && npm run build
+    
+    - name: Build backend
+      run: cd backend && npm run build
+
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install root dependencies
+      run: npm install
+    
+    - name: Check TypeScript compilation
+      run: npx tsc --noEmit
