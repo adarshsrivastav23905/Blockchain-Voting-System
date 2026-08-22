@@ -16,7 +16,7 @@
     "moduleResolution": "node",
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "types": ["node", "hardhat/console"]
+    "types": ["node", "mocha"]
   },
   "include": [
     "hardhat.config.ts",
