@@ -124,6 +124,24 @@ Blockchain-Based-Voting-System/
 │   └── deploy.ts
 ├── tests/
 │   └── Voting.test.ts
+├── docs/
+│   ├── algorithm.md
+│   ├── architecture.md
+│   ├── hardware.md
+│   ├── pin_mapping.md
+│   ├── simulation.md
+│   ├── testing.md
+│   └── troubleshooting.md
+├── circuit_diagram/
+│   └── README.md
+├── simulation/
+│   └── README.md
+├── test_cases/
+│   └── README.md
+├── reports/
+│   └── project_report.md
+├── screenshots/
+│   └── README.md
 ├── hardhat.config.ts
 ├── package.json
 └── README.md
@@ -299,6 +317,20 @@ The current contract test suite covers candidate management, voter registration,
 - The current frontend and backend are local-development interfaces around the contract workflow.
 - MetaMask and a configured local or remote Ethereum network are required for wallet interaction.
 - Production security and infrastructure hardening are not included.
+
+## Documentation
+
+Detailed documentation is organized in the following Markdown files:
+
+- [Project report](reports/project_report.md)
+- [Architecture](docs/architecture.md)
+- [Voting algorithm](docs/algorithm.md)
+- [Testing guide](docs/testing.md)
+- [Simulation and local setup](docs/simulation.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Circuit and deployment notes](circuit_diagram/README.md)
+- [Test cases](test_cases/README.md)
+- [Screenshot evidence guide](screenshots/README.md)
 
 ## Project Status
 
