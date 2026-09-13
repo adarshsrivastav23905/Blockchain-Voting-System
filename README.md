@@ -6,7 +6,7 @@
 
 **Adarsh Srivastav**  
 Computer Science and Engineering (CSE) Student
-
+    
 ## Project Overview
 
 The Blockchain-Based Voting System provides a transparent voting workflow backed by an Ethereum smart contract. Administrators can manage candidates, register voters, and control the voting session. Registered voters can cast one vote, while results and participation status are available through the web interface and REST API.
