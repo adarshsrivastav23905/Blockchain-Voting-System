@@ -71,7 +71,7 @@ Vote is submitted and recorded
        |
        v
 Duplicate voting is rejected
-       |
+       |  
        v
 Results and participation status are displayed
 ```
